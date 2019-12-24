@@ -1,0 +1,25 @@
+test/
+.vscode/
+.nyc_output/
+.eslintrc
+.prettierrc
+.prettierignore
+.lambda
+coverage/
+lib-cov/
+*.md
+*.log
+*.html
+profile-*
+*.flamegraph
+npm-debug.log*
+pnpmfile.js
+
+# keys
+*.pem
+*.env.json
+*.env
+*.aws
+aws_creds
+.vagrant/*
+Vagrantfile

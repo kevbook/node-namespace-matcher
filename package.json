@@ -1,0 +1,27 @@
+{
+  "name": "node-namespace-matcher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tap": "~14.10.5",
+    "husky": "~3.1.0",
+    "semistandard": "^14.2.0",
+    "snazzy": "^8.0.0"
+  },
+  "scripts": {
+    "test": "tap --no-coverage-report 'test/*.test.js'",
+    "test:cov:html": "tap --coverage-report=html 'test/*.test.js'",
+    "test:watch": "tap --watch --no-bail --changed --no-coverage-report 'test/*.test.js'",
+    "lint": "npx semistandard | snazzy",
+    "format": "npx semistandard --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test"
+    }
+  },
+  "engines": {
+    "node": "^12"
+  }
+}
