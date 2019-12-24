@@ -92,10 +92,10 @@ tap.test('-feature1,*', async t => {
   tap.equal(result, true);
 
   result = check('feature2');
-  tap.is(result, true);
+  tap.equal(result, true);
 
   result = check('feature1');
-  tap.is(result, false);
+  tap.equal(result, false);
 
   // Should pass because the rule is exact "feature1"
   result = check('feature1:something');
@@ -141,7 +141,7 @@ tap.test('feature1,-feature2,feature3', async t => {
   tap.equal(result, false);
 
   result = check('feature1');
-  tap.is(result, true);
+  tap.equal(result, true);
 
   result = check('feature2');
   tap.equal(result, false);
@@ -158,10 +158,10 @@ tap.test('feature1,feature1:*,feature2,-feature2:*', async t => {
   tap.equal(result, false);
 
   result = check('feature1');
-  tap.is(result, true);
+  tap.equal(result, true);
 
   result = check('feature1:something');
-  tap.is(result, true);
+  tap.equal(result, true);
 
   result = check('feature2');
   tap.equal(result, true);
@@ -181,13 +181,13 @@ tap.test('feature1,-feature1:*,feature2*', async t => {
   tap.equal(result, false);
 
   result = check('feature1');
-  tap.is(result, true);
+  tap.equal(result, true);
 
   result = check('feature1:');
-  tap.is(result, false);
+  tap.equal(result, false);
 
   result = check('feature1:something');
-  tap.is(result, false);
+  tap.equal(result, false);
 
   result = check('feature2');
   tap.equal(result, true);
@@ -207,13 +207,13 @@ tap.test('Case insensitive - FEATURE1,-FEATURE1:*,FEATURE2*', async t => {
   tap.equal(result, false);
 
   result = check('feature1');
-  tap.is(result, true);
+  tap.equal(result, true);
 
   result = check('feature1:');
-  tap.is(result, false);
+  tap.equal(result, false);
 
   result = check('feature1:something');
-  tap.is(result, false);
+  tap.equal(result, false);
 
   result = check('feature2');
   tap.equal(result, true);
@@ -233,13 +233,13 @@ tap.test('Case insensitive - feature1,-feature1:*,feature2*', async t => {
   tap.equal(result, false);
 
   result = check('FEATURE1');
-  tap.is(result, true);
+  tap.equal(result, true);
 
   result = check('FEATURE1:');
-  tap.is(result, false);
+  tap.equal(result, false);
 
   result = check('FEATURE1:SOMETHING');
-  tap.is(result, false);
+  tap.equal(result, false);
 
   result = check('FEATURE2');
   tap.equal(result, true);
