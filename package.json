@@ -8,6 +8,13 @@
     "semistandard": "^14.2.0",
     "snazzy": "^8.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevbook/node-namespace-matcher.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "tap --no-coverage-report 'test/*.test.js'",
     "test:cov:html": "tap --coverage-report=html 'test/*.test.js'",
