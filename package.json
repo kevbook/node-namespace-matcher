@@ -1,8 +1,7 @@
 {
-  "name": "node-namespace-matcher",
+  "name": "@kevbook/namespace-matcher",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {},
   "devDependencies": {
     "tap": "~14.10.5",
     "husky": "~3.1.0",
