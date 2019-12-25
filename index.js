@@ -54,12 +54,11 @@ function PatternMatcher (pattern) {
    * @param {Sting} namespace
    * @return {Boolean}
    */
-  return function check (namespace) {
+  return namespace => {
     // Return false early
     if (typeof namespace !== 'string') {
       return false;
     }
-
     if (skips.test(namespace)) {
       return false;
     }
