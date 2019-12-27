@@ -45,7 +45,7 @@ check('feature1'); // true | false
 
 ## Examples
 
-See [test directory](/test/index.js)
+See [test directory](/test/index.test.js)
 
 
 ## License
