@@ -1,19 +1,19 @@
 {
   "name": "@kevbook/namespace-matcher",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {
-    "tap": "~14.10.5",
-    "husky": "~3.1.0",
-    "semistandard": "^14.2.0",
-    "snazzy": "^8.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/kevbook/node-namespace-matcher.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "tap": "~14.10.5",
+    "husky": "~4.0.7",
+    "semistandard": "^14.2.0",
+    "snazzy": "^8.0.0"
   },
   "scripts": {
     "test": "tap --no-coverage-report 'test/*.test.js'",
